@@ -11,22 +11,18 @@
     <link href="/public/style.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body>
-    <h1>URL Shortener Microservice</h1>
-    <main>
-      <section>
-        <form action="api/shorturl" method="POST">
-          <fieldset>
-            <legend>URL Shortener</legend>
-            <label for="url_input">URL:</label>
-            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
-            <input type="submit" value="POST URL" />
-          </fieldset>
+  <body class="bg-fuchsia-300 flex flex-col items-center">
+    <h1 class=" text-7xl text-center font-bold">URL Shortener <br> Microservice</h1>
+    <main class=" mt-8 bg-fuchsia-600 w-full max-w-md shadow-xl rounded-lg p-2">
+      <section >
+        <form class=" flex flex-col " action="api/shorturl" method="POST">
+            <input aria-label="Input url" class="p-2 mt-4 rounded-md focus:outline-none" id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
+            <input aria-label="Create short url" class=" bg-fuchsia-200 shadow-md hover:bg-fuchsia-700 hover:text-fuchsia-200 text-fuchsia-700 mt-4 font-bold p-2 rounded-md" type="submit" value="Create short url" />
         </form>
       </section>
     </main>
-    <footer>
-      <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
+    <footer class="mt-10">
+      <p>By <a href="https://www.linkedin.com/in/juste-bocovo-84a5a51a2/">Juste Bocovo</a></p>
     </footer>
   </body>
 </html>
